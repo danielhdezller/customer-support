@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  customer-support-mongodb-test:
+    image: mongo:6-jammy
+    ports:
+      - "27019:27017"
+    volumes:
+      - dbdata6:/data/db
+
+volumes:
+  dbdata6:
