@@ -11,6 +11,13 @@ export class VisitorMessageRepository {
     private visitorMessageModel: Model<VisitorMessage>,
   ) {}
 
+  /**
+   * Create a record of a visitor message at DB.
+   *
+   * @param {CreateVisitorMessageDTO} createVisitorMessageDTO
+   * @return {*}  {Promise<VisitorMessage>}
+   * @memberof VisitorMessageRepository
+   */
   async createVisitorMessage(
     createVisitorMessageDTO: CreateVisitorMessageDTO,
   ): Promise<VisitorMessage> {
