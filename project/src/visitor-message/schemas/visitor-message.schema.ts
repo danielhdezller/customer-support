@@ -9,12 +9,12 @@ export type VisitorMessageDocument = HydratedDocument<VisitorMessage>;
 @Schema({ timestamps: true })
 export class VisitorMessage {
   @Prop({ type: String, required: true })
-  @DtoProperty()
+  @DtoProperty({ example: '5f74865056d7bb000fcd39f' })
   @IsHexadecimal()
   botIdentifier: string;
 
   @Prop({ type: String, required: true })
-  @DtoProperty()
+  @DtoProperty({ example: 'Hi' })
   @IsNotEmptyString()
   message: string;
 }

@@ -23,7 +23,7 @@ export function configureDocumentationGenerator(
   // Configure the list of documents path`
   swaggerPaths.forEach((path) => {
     const config = new DocumentBuilder()
-      .setTitle('Nest')
+      .setTitle('CustomerSupport')
       .setDescription('API documentation.')
       .setContact(
         'CustomerSupport',

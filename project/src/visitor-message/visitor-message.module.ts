@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { VisitorMessageController } from './visitor-message.controller';
-import { VisitorMessageService } from './visitor-message.service';
-import { VisitorMessageRepository } from './visitor-message.repository';
+import { VisitorMessageController } from './controllers/visitor-message.controller';
+import { VisitorMessageService } from './services/visitor-message.service';
+import { VisitorMessageRepository } from './repositories/visitor-message.repository';
 import { MongooseModule } from '@nestjs/mongoose';
 import {
   VisitorMessage,
