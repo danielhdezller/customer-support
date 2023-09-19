@@ -34,3 +34,6 @@ $ yarn test
 
 - Author - [Daniel Hernández](https://github.com/danielhdezller)
 - LinkedIn - [LinkedIn](https://www.linkedin.com/in/daniel-hernandez-ller/)
+
+
+![officer-peña](https://github.com/danielhdezller/customer-support/assets/63543622/eb4235ba-6d99-461d-a688-f9d0379808af)
