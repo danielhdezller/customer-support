@@ -1,7 +1,5 @@
 # CustomerSupport
 
-- Right now its giving random reply messages, its pending to integrate a IA that analyze the customer message. For example the Ultimate IA but their public API is not open yet.
-
 ## Steps to run the project:
 
 - if you haven't already: copy `.env.example` to `.env` at the project folder level.
