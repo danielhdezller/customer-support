@@ -2,6 +2,10 @@ import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import createTestApp from './createTestApp';
 import { CreateVisitorMessageDTO } from 'src/visitor-message/dto/create-visitor-message.dto';
+import {
+  IntentReplyData,
+  IntentTypeEnum,
+} from 'src/visitor-message/resource/intent-reply-examples';
 
 describe('VisitorMessage (e2e)', () => {
   let testApp: INestApplication;
@@ -51,7 +55,12 @@ describe('VisitorMessage (e2e)', () => {
       .send(createVisitorMessageDTO)
       .expect(201);
 
-    expect(response.body.text).not.toBeNull();
-    expect(response.body.id).not.toBeNull();
+    const message = IntentReplyData.find(
+      (reply) => reply.name === IntentTypeEnum.GREETING,
+    );
+    const reply = message.reply;
+
+    expect(response.body.id).toBe(reply.id);
+    expect(response.body.text).toBe(reply.text);
   });
 });

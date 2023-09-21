@@ -7,6 +7,7 @@ import {
   VisitorMessageSchema,
 } from 'src/visitor-message/schemas/visitor-message.schema';
 import { VisitorMessageModule } from 'src/visitor-message/visitor-message.module';
+import { UltimateModule } from 'src/ultimate/ultimate.module';
 
 const init = async ({ additionalModules = [] }) => {
   const moduleRef = await Test.createTestingModule({
@@ -19,6 +20,7 @@ const init = async ({ additionalModules = [] }) => {
         },
       ]),
       VisitorMessageModule,
+      UltimateModule,
       ...additionalModules,
     ],
     providers: [],

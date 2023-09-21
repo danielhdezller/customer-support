@@ -1,15 +1,14 @@
 import { Injectable } from '@nestjs/common';
 import { CreateVisitorMessageDTO } from '../dto/create-visitor-message.dto';
 import { VisitorMessageRepository } from '../repositories/visitor-message.repository';
-import { IntentReplyData, ReplyDTO } from '../resource/intent-reply-examples';
+import {
+  IntentReplyData,
+  IntentTypeEnum,
+  ReplyDTO,
+} from '../resource/intent-reply-examples';
 import { UltimateService } from 'src/ultimate/services/ultimate.service';
 import { lastValueFrom } from 'rxjs';
 import { Intent } from 'src/ultimate/interfaces/ultimate.response.interface';
-
-export enum IntentTypeEnum {
-  NOT_FOUND = 'Not found',
-  TECHNICAL_PROBLEMS = 'Error',
-}
 
 @Injectable()
 export class VisitorMessageService {

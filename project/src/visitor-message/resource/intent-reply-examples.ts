@@ -34,6 +34,12 @@ export function getRandomReply(messages: MessageDTO[]): ReplyDTO {
   return messages[randomIndex].reply;
 }
 
+export enum IntentTypeEnum {
+  NOT_FOUND = 'Not found',
+  TECHNICAL_PROBLEMS = 'Error',
+  GREETING = 'Greeting',
+}
+
 export const IntentReplyData: MessageDTO[] = [
   {
     id: '34d7831e137a4016a55f98926800a643',
