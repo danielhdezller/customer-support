@@ -7,12 +7,14 @@ import {
   VisitorMessage,
   VisitorMessageSchema,
 } from './schemas/visitor-message.schema';
+import { UltimateModule } from 'src/ultimate/ultimate.module';
 
 @Module({
   imports: [
     MongooseModule.forFeature([
       { name: VisitorMessage.name, schema: VisitorMessageSchema },
     ]),
+    UltimateModule,
   ],
   controllers: [VisitorMessageController],
   providers: [VisitorMessageService, VisitorMessageRepository],

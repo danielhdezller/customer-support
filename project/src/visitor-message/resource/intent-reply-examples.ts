@@ -119,4 +119,58 @@ export const IntentReplyData: MessageDTO[] = [
       text: 'Please follow these instructions "LINK" to open a new account.',
     },
   },
+  {
+    id: '29a0d3b7cecc4fe5955f6c5c30fbcf6a',
+    name: 'I want to speak with a human',
+    description: 'The visitor wants to speak with a human.',
+    reply: {
+      id: 'd1bf934c18634586962758fb98ff44a2',
+      text: 'Of course, a human will contact you shortly.',
+    },
+  },
+  {
+    id: '29a0d3b7cecc4fe5955f6c5c30fbcf6b',
+    name: 'Means or need to contact ',
+    description: 'The visitor wants to contact.',
+    reply: {
+      id: 'd1bf934c18634586962758fb98ff44a3',
+      text: 'Of course, a we will contact you shortly.',
+    },
+  },
+  {
+    id: '29a0d3b7cecc4fe5955f6c5c30fbcf6c',
+    name: 'Product interest or quote request',
+    description: 'The visitor wants a product.',
+    reply: {
+      id: 'd1bf934c18634586962758fb98ff44a4',
+      text: 'We are delighted that you are interested in our product.',
+    },
+  },
+  {
+    id: '29a0d3b7cecc4fe5955f6c5c30fbcf6d',
+    name: 'Updating customer information',
+    description: 'The visitor wants update information.',
+    reply: {
+      id: 'd1bf934c18634586962758fb98ff44a5',
+      text: 'Of course, provide the information you want to update.',
+    },
+  },
+  {
+    id: '29a0d3b7cecc4fe5955f6c5c30fbcf6e',
+    name: 'Error',
+    description: 'Technical problems',
+    reply: {
+      id: 'd1bf934c18634586962758fb98ff44a6',
+      text: 'Sorry, we are experiencing technical problems.',
+    },
+  },
+  {
+    id: '29a0d3b7cecc4fe5955f6c5c30fbcf6f',
+    name: 'Not found',
+    description: 'Not found intent at ultimate.',
+    reply: {
+      id: 'd1bf934c18634586962758fb98ff44a7',
+      text: "Excuse me, we don't understand you, can you repeat.",
+    },
+  },
 ];

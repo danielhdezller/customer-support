@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MongooseConfigService } from './mongoose/mongoose.service';
 import { VisitorMessageModule } from './visitor-message/visitor-message.module';
+import { UltimateModule } from './ultimate/ultimate.module';
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { VisitorMessageModule } from './visitor-message/visitor-message.module';
       useClass: MongooseConfigService,
     }),
     VisitorMessageModule,
+    UltimateModule,
   ],
   controllers: [],
   providers: [],
